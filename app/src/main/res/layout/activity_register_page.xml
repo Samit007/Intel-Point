@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textColor="#000"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvfn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="First Name"
+                android:textColor="#000"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etfname"
+                android:hint="First name"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:layout_marginStart="150dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/tvlm"
+                android:text="Last Name"
+                android:layout_below="@id/tvfn"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:id="@+id/etlname"
+                android:maxLines="1"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginStart="150dp"
+                android:layout_below="@id/tvfn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tvc"
+                    android:text="City"
+                    android:layout_below="@id/tvlm"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="City name"
+                    android:id="@+id/etcity"
+                    android:maxLines="1"
+                    android:layout_below="@id/tvlm"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_marginStart="150dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Email"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tve"
+                    android:layout_below="@id/tvc"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Email here"
+                    android:id="@+id/etemail"
+                    android:layout_below="@id/tvc"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:layout_marginStart="150dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:id="@+id/tvd"
+                    android:text="DOB"
+                    android:layout_below="@id/tve"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Select DOB"
+                    android:id="@+id/etdob"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:layout_below="@id/tve"
+                    android:textColor="#000"
+                    android:editable="false"
+                    android:layout_marginStart="150dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:id="@+id/tvg"
+                    android:layout_marginTop="12dp"
+                    android:text="Gender"
+                    android:layout_below="@id/tvd"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvd"
+                    android:weightSum="4"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="150dp"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:layout_weight="1"
+                        android:id="@+id/male"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:layout_weight="1"
+                        android:id="@+id/female"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Custom"
+                        android:layout_weight="1"
+                        android:id="@+id/others"
+                        android:checked="false" />
+                </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/t"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="#999494"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. Tou will recieve SMS Notification from us for verification purpose"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsign"
+        android:background="#377E25"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/t"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="Next Step is Phone number verification"/>
+    </RelativeLayout>
+    </LinearLayout>

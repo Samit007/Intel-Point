@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerification"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:text="Enter your phone number and press 'Go' to get Verification code "
+    android:layout_marginTop="40dp"
+    android:textSize="20dp"
+    android:textColor="#000"/>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="40dp">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Phone no"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone number"
+        android:textSize="20dp"
+        android:id="@+id/phone"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textColor="#000"
+        android:layout_marginStart="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/sendcode"
+        android:textColor="#01149B"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/phone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tvlm"
+        android:text="Code"
+        android:layout_below="@id/tvfn"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter code"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginStart="150dp"
+        android:layout_below="@id/tvfn"/>
+</RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:text="Didn't get a code"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/questionmark"
+        android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/resend"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Resend"
+            android:textColor="#01149B" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnverify"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="#377E25"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
