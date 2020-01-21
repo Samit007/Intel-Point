@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intel"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb"
+        android:text="  Login with facebook"
+        android:textColor="#000"
+        android:background="#D0D1CC"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/fb"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Phone Number"
+        android:textColor="#000"
+        android:id="@+id/ph"
+        android:background="#D0D1CC"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#01149B"
+            android:id="@+id/trouble"
+            android:textSize="17dp"
+            android:drawableRight="@drawable/questionmark"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="Trouble Logging in "/>
+    </RelativeLayout>
+</LinearLayout>
